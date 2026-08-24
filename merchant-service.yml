@@ -7,3 +7,5 @@ spring:
 
 jwt:
   secret-key: a8F2kL9xQ7mP4zR6vN1sT5yH8cW3jK0dhhgfdhkijhffvkooyihnnhjfydjhifgx
+  webhook:
+    secret-encryption-key: K7mQ2vL9xR4pN8sT6wY3hF1dJ5cZ0bA7e
