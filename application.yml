@@ -1,11 +1,8 @@
 spring:
-  application:
-    name: razorpay
-
   datasource:
     url: jdbc:postgresql://localhost:5432/razorpayDB
     username: postgres
-    password: Singh@1234
+    password: <YOUR_POSTGRES_PASSWORD>
 
   jpa:
     hibernate:
@@ -52,10 +49,10 @@ spring:
       enabled: true
 
 vault:
-  master-key: "MdUtNXxdrBCAkEYRuZ1UsDPbWk35H9kiCAl9/sBnDdc="
+  master-key: "<YOUR_VAULT_MASTER_KEY>"
 
 jwt:
-  secret-key: "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+  secret-key: "<YOUR_JWT_SECRET>"
 
 app:
   rate-limit:
