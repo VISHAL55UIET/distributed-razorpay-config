@@ -49,10 +49,10 @@ spring:
       enabled: true
 
 vault:
-  master-key: "<YOUR_VAULT_MASTER_KEY>"
+  master-key: MdUtNXxdrBCAkEYRuZ1UsDPbWk35H9kiCAl9/sBnDdc=
 
 jwt:
-  secret-key: "<YOUR_JWT_SECRET>"
+  secret-key: 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
 
 app:
   rate-limit:
