@@ -15,3 +15,12 @@ resilience4j:
         core-thread-pool-size: 5
         max-thread-pool-size: 10
         queue-capacity: 20
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  endpoint:
+    health:
+      show-details: always
