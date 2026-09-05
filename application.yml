@@ -16,7 +16,6 @@ spring:
   kafka:
     listener:
       ack-mode: manual
-
     bootstrap-servers: localhost:29092
 
     producer:
@@ -49,14 +48,11 @@ spring:
     virtual:
       enabled: true
 
-
 vault:
   master-key: MdUtNXxdrBCAkEYRuZ1UsDPbWk35H9kiCAl9/sBnDdc=
 
-
 jwt:
   secret-key: 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
-
 
 app:
   rate-limit:
@@ -68,9 +64,6 @@ app:
     topics:
       payment: payments.events
       order: orders.events
-      refund: refund.events
-      settlement: settlement.events
-
 
 payment:
   simulator:
@@ -93,7 +86,6 @@ payment:
         max-delay-seconds: 10
         success-rate: 80
 
-
 eureka:
   client:
     service-url:
@@ -102,7 +94,6 @@ eureka:
   instance:
     prefer-ip-address: true
     hostname: localhost
-
 
 management:
   endpoints:
@@ -121,7 +112,6 @@ management:
   metrics:
     tags:
       application: ${spring.application.name}
-
 
 logging:
   level:
