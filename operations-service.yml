@@ -4,17 +4,19 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/razorpay-operations-db
-    cloud:
+
+  cloud:
     openfeign:
       client:
         config:
           merchant-service:
             connectTimeout: 2000
             readTimeout: 3000
+
           vault-service:
             connectTimeout: 2000
             readTimeout: 5000
-  
+
 resilience4j:
   circuitbreaker:
     instances:
