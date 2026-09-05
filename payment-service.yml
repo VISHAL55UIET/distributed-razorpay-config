@@ -12,6 +12,7 @@ spring:
           merchant-service:
             connectTimeout: 2000
             readTimeout: 3000
+
           vault-service:
             connectTimeout: 2000
             readTimeout: 5000
