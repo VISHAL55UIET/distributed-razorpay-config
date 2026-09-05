@@ -12,7 +12,6 @@ spring:
           merchant-service:
             connectTimeout: 2000
             readTimeout: 3000
-
           vault-service:
             connectTimeout: 2000
             readTimeout: 5000
@@ -41,3 +40,12 @@ resilience4j:
       vault-service:
         max-attempts: 2
         wait-duration: 500ms
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  endpoint:
+    health:
+      show-details: always
